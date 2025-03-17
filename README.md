@@ -1,4 +1,6 @@
-# server socket
+
+#server socket
+
 import socket
 import threading
 
@@ -38,8 +40,8 @@ def start_server(host='127.0.0.1', port=65432):
 
 if __name__ == "__main__":
     start_server()
-
- #Client server
+    
+    #Client server
 import socket
 
 def start_client(host='127.0.0.1', port=65432):
