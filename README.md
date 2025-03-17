@@ -1,4 +1,4 @@
-#server socket
+# server socket
 
 import socket
 import threading
@@ -8,7 +8,7 @@ def handle_client_receive(client_socket, client_address):
         try:
             message = client_socket.recv(1024).decode('utf-8')
             if message:
-                print(f"Received from")
+                print(f"Received from") 
             else:
                 break
         except ConnectionResetError:
@@ -40,7 +40,7 @@ def start_server(host='127.0.0.1', port=65432):
 if __name__ == "__main__":
     start_server()
     
-#CLient server
+#  Client server
 import socket
 
 def start_client(host='127.0.0.1', port=65432):
